@@ -84,8 +84,8 @@ in order to retieve the data from table you can use the following methods:-
 6) or(String column)      :- to  filter records based on more than one condition which are separated by or
 7) eq(Object obj)         :- to  
 8) query()                :- will return a list of objects 
-'''
 
+```
 import com.thinking.machines.SupportClasses.*;
 import java.util.*;
 import java.math.*;
