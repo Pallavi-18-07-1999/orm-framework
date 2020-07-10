@@ -36,15 +36,15 @@ this framework works only for MySQL.
 # Information about the methods of orm framework
 
 you can use the following methods :- 
-1:- getInstance() :- to get the instance of TMDB class.
-2:- begin():-     :- to begin a transaction 
-3:- commit():-    :- to commit the transaction
-4:- save(Object obj) :- to insert a row in table
-5:- remove(Class cls,Object ...obj) :- to delete a row from table
-6:- update(Object obj)  :- to update a record in table 
-7:- select(Class cls) :- to retrieve data from table
+1) getInstance() :- to get the instance of TMDB class.
+2) begin():-     :- to begin a transaction 
+3) commit():-    :- to commit the transaction
+4) save(Object obj) :- to insert a row in table
+5) remove(Class cls,Object ...obj) :- to delete a row from table
+6) update(Object obj)  :- to update a record in table 
+7) select(Class cls) :- to retrieve data from table
 
-'''
+```
 import com.thinking.machines.SupportClasses.*;
 import java.util.*;
 import java.math.*;
