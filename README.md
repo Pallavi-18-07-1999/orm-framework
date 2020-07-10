@@ -18,10 +18,17 @@ this framework works only for MySQL.
 2) go to the gui folder and run the batch file named as .bat.
 
 ![rsz_1dbsettigs](https://user-images.githubusercontent.com/66680113/87186074-73e89b00-c308-11ea-9262-b9ddfd4298ac.png)
+
 3) enter the details click on save button . the details which you have entered will be stored in json format in a file named as DBConfiguration.json.
 4) now if you want to create the java class then you need to switch to the tab named as generate Pojo classes.
+
+![Tables](https://user-images.githubusercontent.com/66680113/87187659-2a4d7f80-c30b-11ea-904d-deeb7e600f8a.png)
+
 5) here you can generate class files by clicking on any row of the table.
+
 6) after clicking on generate class file button you have to choose the directory in which you want to place your class files .
+
+![FileChooser](https://user-images.githubusercontent.com/66680113/87188010-b95a9780-c30b-11ea-906a-51c8fedead5a.png)
 
 
 
