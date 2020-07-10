@@ -7,6 +7,15 @@ that frees the programmer from remembering the sql queries. this framework maps 
 3) updation
 4) retrieving the data from the table.
 this framework works only for MySQL.
+Following data types of mysql are supported by this framework:-
+1) int 
+2) char 
+3) varchar
+4) date
+5) time
+6) datetime
+
+
 
 # Benefits of orm framework
 1) the programmer doesnt need to remember the sql statements.
@@ -34,6 +43,58 @@ this framework works only for MySQL.
 
 
 # Information about the methods of orm framework
+
+user can create the java class by using the gui but if dont want to use gui tool then he can write the code for class . while writing the code he/she has to use the following annotations:-
+
+1) Table :- you need to apply this annotation on the class level.
+2) FieldAnnotation :- you have to apply this annotation on the properties of the class. you have to specify
+3) PrimaryKeyAnnotaton :-you have to apply this annotation on the properties of the class in order to specify  primary key.
+4) AutoIncrementAnnotation :- if the field 
+5) UniqueAnnotation :-
+6) NotNullAnnotation :-
+
+```
+import com.thinking.machines.annotations.*;
+import java.util.Date;
+import java.math.*;
+@Table("student")
+public class Student
+{
+@PrimaryKeyAnnotation  @AutoIncrementAnnotation @FieldAnnotation("rollNumber") 
+private int rollNumber;
+@FieldAnnotation("name") 
+private String name;
+@UniqueAnnotation @FieldAnnotation("aadharId")
+private String aadharId;
+
+public void setRollNumber(int rollNumber)
+{
+this.rollNumber = rollNumber;
+}
+public int getRollNumber()
+{
+return this.rollNumber;
+}
+public void setName(String name)
+{
+this.name = name;
+}
+public String getName()
+{
+return this.name;
+}
+public void setAadharId(String aadharId)
+{
+this.aadharId = aadharId;
+}
+public String getAadharId()
+{
+return this.aadharId;
+}
+}
+```
+
+
 
 you can use the following methods :- 
 1) getInstance() :- to get the instance of TMDB class.
