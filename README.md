@@ -14,8 +14,10 @@ this framework works only for MySQL.
 3)the user doesnt need to create the java class .java 
 
 # Usage
-1)downlaod the jar file from this repository.
-2)place the jar file in the lib folder of your project.
+1)downlaod the  file from this repository and place it in any location.
+2)go to the gui folder and run the batch file named as .bat.
+
+
 
 
 
