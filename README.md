@@ -75,6 +75,42 @@ e.printStackTrace();
 }
 }
 ```
+in order to retieve the data from table you can use the following methods:-
+1) orderBy(String column) :- to sort the records
+2) asc()                  :- sort the records in ascending order
+3) desc()                 :- sort the records in descending order
+4) where(String column)   :- to extract only those records that fulfill a specified condition. 
+5) and(String column)     :- to  filter records based on more than one condition which  are separated by and
+6) or(String column)      :- to  filter records based on more than one condition which are separated by or
+7) eq(Object obj)         :- to  
+8) query()                :- will return a list of objects 
+'''
+
+import com.thinking.machines.SupportClasses.*;
+import java.util.*;
+import java.math.*;
+class DBAnalyser
+{
+public static void main(String gg[])
+{
+try
+{
+TMDB tmdb=TMDB.getInstance();
+tmdb.begin();
+List<Student> list1=tmdb.select(Student.class).query();
+List<Student> list2=tmdb.select(Student.class).orderBy("name").desc().query();
+List<Student> list3=tmdb.select(Student.class).where("rollNumber").eq(1).query();
+List<Student> list4=tmdb.select(Student.class).where("rollNumber").ne(2).orderBy("name").query();
+tmdb.commit();    
+}catch(Exception e)
+{ 
+e.printStackTrace();
+}
+}
+}
+```
+
+
 
 
 
