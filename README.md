@@ -8,15 +8,16 @@ that frees the programmer from remembering the sql queries. this framework maps 
 4:-retrieving the data from the table.
 this framework works only for MySQL.
 
-#Benefits of orm framework
+# Benefits of orm framework
 1) the programmer doesnt need to remember the sql statements.
 2) sql queries are encapsulated into functions.so if you want to perform any operation then you just have to call the function any the sql query will be fired under the hood.
 3)the user doesnt need to create the java class .java 
 
-#Usage
+# Usage
 1)downlaod the jar file from this repository.
 2)place the jar file in the lib folder of your project.
-3)
+
+
 
 
 
