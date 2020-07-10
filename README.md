@@ -16,6 +16,7 @@ this framework works only for MySQL.
 # Usage
 1)downlaod the  file from this repository and place it in any location.
 2)go to the gui folder and run the batch file named as .bat.
+![image](https://user-images.githubusercontent.com/66680113/87184156-1e5ebf00-c305-11ea-84e8-c51ca5c376fe.png)
 
 
 
