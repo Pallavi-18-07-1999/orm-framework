@@ -1,1 +1,0 @@
-java -classpath c:\TMORMFramework\hr\classes;c:\TMORMFramework\hr\lib\*;. GUIMaker
