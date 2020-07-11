@@ -1,0 +1,7 @@
+{
+"database":"test",
+"username":"root",
+"password":"Pallavi@12",
+"Driver":"com.mysql.cj.jdbc.Driver",
+"connectionString":"jdbc:mysql://localhost:3306/"
+}
