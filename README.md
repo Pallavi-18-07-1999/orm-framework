@@ -1,7 +1,7 @@
 # orm-framework
 # About the framework:-
 while writing sql statements the programmer  has to rememeber the exact syntax.Even a minor mistake can cause him a huge trouble .so i have created an orm framework
-that frees the programmer from remembering the sql queries. this framework maps a table of MySQL to a Java Class and the  field of that table is the property of that class.this framework basically  performs 4 types of operations.
+that frees the programmer from remembering the sql queries. this framework maps a table of MySQL to a Java Class and the  field of that table is mapped by  the property of that class.this framework basically  performs 4 types of operations.
 1) insertion
 2) deletion
 3) updation
@@ -25,7 +25,7 @@ Following data types of mysql are supported by this framework:-
 
 # Usage
 1) downlaod the  file from this repository and place it in any location.
-2) go to the gui folder and run the batch file named as .bat.
+2) go to the gui folder and run the batch file named as  GUITool.bat.
 
 ![rsz_1dbsettigs](https://user-images.githubusercontent.com/66680113/87186074-73e89b00-c308-11ea-9262-b9ddfd4298ac.png)
 
@@ -40,19 +40,23 @@ Following data types of mysql are supported by this framework:-
 
 ![FileChooser](https://user-images.githubusercontent.com/66680113/87188010-b95a9780-c30b-11ea-906a-51c8fedead5a.png)
 
+
+
 7) you can see the code of the java class in the directory you have chosen.
 
 
 # Information about the methods of orm framework
 
-user can create the java class by using the gui but if dont want to use gui tool then he can write the code for class . while writing the code he/she has to use the following annotations:-
+you can create the java class by using the gui but if dont want to use gui tool then you can write the code for class . while writing the code you have to use the following annotations:-
 
-1) Table :- you need to apply this annotation on the class level.
-2) FieldAnnotation :- you have to apply this annotation on the properties of the class. you have to specify
-3) PrimaryKeyAnnotaton :-you have to apply this annotation on the properties of the class in order to specify  primary key.
-4) AutoIncrementAnnotation :- if the field 
-5) UniqueAnnotation :-
-6) NotNullAnnotation :-
+1) Table :- you need to apply this annotation on the class level.this annotation is used to map the class to a table.
+2) FieldAnnotation :- you have to apply this annotation on the properties of the class.You can use this annotation to map the property of the class to field of table.
+3) PrimaryKeyAnnotaton :-you have to apply this annotation on the properties of  the class.you can use this annotation to specify primary key.
+4) AutoIncrementAnnotation :- you have to apply this annotation on the properties of  the class.you can use this annotation to specify that the field is auto      incremented.
+5) UniqueAnnotation :-you have to apply this annotation on the properties of  the class.you can use this annotation to specify that the field is unique.
+6) NotNullAnnotation :-you have to apply this annotation on the properties of  the class.you can use this annotation to specify that not null constraint is appled to the field.
+7) ForeignKeyAnnotation :-you have to apply this annotation on the properties of  the class.you can use this annotation to specify that the foreign key constraint is applied on this field.
+
 
 ```
 import com.thinking.machines.annotations.*;
@@ -67,6 +71,8 @@ private int rollNumber;
 private String name;
 @UniqueAnnotation @FieldAnnotation("aadharId")
 private String aadharId;
+@ForeignKeyAnnotation("course","id") @FieldAnnotation("course_id")
+private int course_id;
 
 public void setRollNumber(int rollNumber)
 {
@@ -75,6 +81,14 @@ this.rollNumber = rollNumber;
 public int getRollNumber()
 {
 return this.rollNumber;
+}
+public void setCourseId(int course_id)
+{
+this.course_id = course_id;
+}
+public int getCourseId()
+{
+return this.course_id;
 }
 public void setName(String name)
 {
@@ -96,8 +110,8 @@ return this.aadharId;
 ```
 
 
+you can use the following methods if you want to manipulate the data of table:- 
 
-you can use the following methods :- 
 1) getInstance() :- to get the instance of TMDB class.
 2) begin():-     :- to begin a transaction 
 3) commit():-    :- to commit the transaction
@@ -138,14 +152,20 @@ e.printStackTrace();
 }
 ```
 in order to retieve the data from table you can use the following methods:-
+
 1) orderBy(String column) :- to sort the records
 2) asc()                  :- sort the records in ascending order
 3) desc()                 :- sort the records in descending order
 4) where(String column)   :- to extract only those records that fulfill a specified condition. 
 5) and(String column)     :- to  filter records based on more than one condition which  are separated by and
 6) or(String column)      :- to  filter records based on more than one condition which are separated by or
-7) eq(Object obj)         :- to  
-8) query()                :- will return a list of objects 
+7) eq(Object obj)         :- you can use this method for equality comparison
+8) ne(Object onj)         :- if you want to get those records in which the value of a particular field is not equal a specified value then you can use this
+9) ge(Object obj)         :- if you want to get those records in which the value of a particular field is greater than or equal to a specified value then you can use  this
+10) le(Object onj)        :- if you want to get those records in which the value of a particular field is less than or equal to than a specified value then you can use this
+11) gt(Object obj)        :- if you want to get those records in which the value of a particular field is greater than a specified value then you can use this
+12) lt(Object obj)        :- if you want to get those records in which the value of a particular field is less than a specified value then you can use this
+13) query()               :- will return a list of objects 
 
 ```
 import com.thinking.machines.SupportClasses.*;
