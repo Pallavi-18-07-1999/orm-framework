@@ -6,8 +6,9 @@ that frees the programmer from remembering the sql queries. this framework maps 
 2) deletion
 3) updation
 4) retrieving the data from the table.
- this framework works only for MySQL.
- Following data types of mysql are supported by this framework:-
+ 
+this framework works only for MySQL.
+Following data types of mysql are supported by this framework:-
 1) int 
 2) char 
 3) varchar
