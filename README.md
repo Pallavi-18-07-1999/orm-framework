@@ -40,7 +40,11 @@ Following data types of mysql are supported by this framework:-
 
 ![FileChooser](https://user-images.githubusercontent.com/66680113/87188010-b95a9780-c30b-11ea-906a-51c8fedead5a.png)
 
+![rsz_1package](https://user-images.githubusercontent.com/66680113/87223914-7564a280-c39e-11ea-93db-627a074ded42.png)
 
+7) if you want to associate this file to a package then you can click on yes button and enter the name of package .
+
+![rsz_enterpackage](https://user-images.githubusercontent.com/66680113/87223932-a2b15080-c39e-11ea-9709-a196af00b644.png)
 
 7) you can see the code of the java class in the directory you have chosen.
 
