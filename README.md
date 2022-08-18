@@ -5,7 +5,7 @@ that frees the programmer from remembering the sql queries. This framework maps 
 1) insertion
 2) deletion
 3) updation
-4) retrieving the data from the table.
+4) retrieving the data from the table .
  
 This framework works only for MySQL .
 Following data types of mysql are supported by this framework:-
