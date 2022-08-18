@@ -24,7 +24,7 @@ Following data types of mysql are supported by this framework:-
 3) The user doesn't need to write the code for the class which maps it to the table .
 
 # Usage
-1) Downlaod the  file from this repository and place it in any location.
+1) Downlaod the  file from this repository and place it in any location .
 2) Go to the gui folder and run the batch file named as  GUITool.bat.
 
 ![rsz_1dbsettigs](https://user-images.githubusercontent.com/66680113/87186074-73e89b00-c308-11ea-9262-b9ddfd4298ac.png)
