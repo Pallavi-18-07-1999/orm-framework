@@ -1,5 +1,5 @@
 # orm-framework
-# About the framework:-
+# About the framework     :-
 While writing sql statements the programmer  has to rememeber the exact syntax.Even a minor mistake can cause him a huge trouble .So i have created an orm framework
 that frees the programmer from remembering the sql queries. This framework maps a table of MySQL to a Java Class and the  field of that table is mapped by  the property of that class.This framework basically  performs 4 types of operations.
 1) insertion
